@@ -83,7 +83,7 @@ function naiveSearch(array, item) {
     }
 }
 
-Answer: 
+Answer: This is O(n) as it scales linearly with the length of the array.
 */
 
 /*
@@ -99,7 +99,7 @@ function createPairs(arr) {
     }
 }
 
-Answer:
+Answer: This is O(n^k) k=2 because it has nested loops that are each O(n).
 
 */
 
