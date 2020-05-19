@@ -7,14 +7,15 @@
 preferably of the same breed. So you want to know if anyone out of the 15 people have the same breed as your dog. You stand up and yell 
 out, who here has a golden retriever and would like to be a playdate for my golden. Someone yells - "I do, be happy to bring him over"
 
-Answer:
+Answer: This is O(1) because everyon in the room hears the declaration, making the search essentially 15 seperate searches of an array
+that has a length of 1.
 
 2) Determine the Big O for the following algorithm: You are sitting in a room with 15 people. You want to find a playmate for your dog 
 who is of the same breed. So you want to know if anyone out of the 15 people have the same breed as your dog. You start with the first 
 person and ask him if he has a golden retriever. He says no, then you ask the next person, and the next, and the next until you find 
 someone who has a golden or there is no one else to ask.
 
-Answer:
+Answer: This is O(n) because the number of requests to complete the search will scale linearly with the number of people in the room.
 
 */
 
@@ -31,7 +32,7 @@ function isEven(value) {
     }
 }
 
-Answer:
+Answer: This is O(1) because only a single comparison is being performed, regardless of what the input number is.
 
 */
 
@@ -50,7 +51,7 @@ function areYouHere(arr1, arr2) {
     return false;
 }
 
-Answer: 
+Answer: This is O(n^k) k=2 because it has nested loops that are each O(n).
 
 */
 
@@ -65,7 +66,7 @@ function doubleArrayValues(array) {
     return array;
 }
 
-Answer: 
+Answer: This is O(n) as the number of operations scales linearly with the length of the array.
 
 */
 
