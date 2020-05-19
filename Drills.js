@@ -125,7 +125,8 @@ function compute(num) {
     return result;
 }
 
-Answer: 
+Answer: This function produces an array containing the Fibonacci Sequence of a given number (num).
+It has a time complexity of O(n) as the resulting array scales linearly as the number increases.
 
 */
 
@@ -158,7 +159,7 @@ function efficientSearch(array, item) {
     return -1;
 }
 
-Answer:
+Answer: This is O(logn) because it uses heuristics (e.g. the min, max and currentIndex) to complete the task more quickly than a linear function.
 
 */
 
@@ -171,7 +172,7 @@ function findRandomElement(arr) {
     return arr[Math.floor(Math.random() * arr.length)];
 }
 
-Answer:
+Answer: This is O(1) as it only requires a single operation on the array.
 
 */
 
@@ -190,7 +191,8 @@ function isWhat(n) {
     return true;
 }
 
-Answer:
+Answer: This function determines if a number (n) is prime.  This has O(n) complexity because it performs more checks against the input
+the greater the input is.
 
 */
 
