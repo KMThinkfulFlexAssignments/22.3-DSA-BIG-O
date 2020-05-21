@@ -238,7 +238,7 @@ const solveTower = function(num, start, end, using) {
   solveTower(num -1, using, end, start);
 };
 
-console.log(solveTower(3, 'A', 'C', 'B'));
+//console.log(solveTower(3, 'A', 'C', 'B'));
 
 /*
 12. Iterative version
