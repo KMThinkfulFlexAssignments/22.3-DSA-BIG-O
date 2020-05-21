@@ -231,13 +231,21 @@ What is the runtime of your algorithm?
 Answer: 
 
 */
+const solveTower = function(num, start, end, using) {
+  if(num === 0) return;
+  solveTower(num-1, start, using, end);
+  console.log(`Move disc from ${start} to ${end}`);
+  solveTower(num -1, using, end, start);
+};
+
+console.log(solveTower(3, 'A', 'C', 'B'));
 
 /*
 12. Iterative version
 =====================
 Solve the drills 1 - 7 from your previous checkpoint (Recursion) iteratively.
 
-Answer: 
+Answer: See Iteratives.js
 
 */
 
@@ -247,7 +255,9 @@ Answer:
 Take your solutions from the recursive exercises that you completed in the previous checkpoint and identify the time 
 complexities (big O) of each of them.
 
-Answer: 
+Answer: 1) O(n) linear to number of sheep, 2) O(n) linear to value of exponent, 3) O(n) linear to length of the string
+4) O(n) linear to the value of the number, 5) O(n) linear to the number of breakers in the string, 6) O(n) linear to 
+the value of the number, 7) O(n) linear to the value of the number
 
 */
 
@@ -256,6 +266,8 @@ Answer:
 ===================
 Take your solutions from the iterative exercises today and identify the time complexities (big O) of each of them.
 
-Answer: 
+Answer: 1) O(n) linear to the value of the number, 2) O(n) linear to the value of the exponent. 3) O(n) linear to 
+the length of the string, 4) O(n) linear to the value of the number, 5) O(n) linear to the number of splitters in
+the string, 6) O(n) linear to the value of the number, 7) O(n) linear to the value of the number
 
 */
